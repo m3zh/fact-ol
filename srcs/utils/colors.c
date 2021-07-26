@@ -6,7 +6,7 @@
 /*   By: mlazzare <mlazzare@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 14:55:39 by mlazzare          #+#    #+#             */
-/*   Updated: 2021/07/25 13:57:41 by mlazzare         ###   ########.fr       */
+/*   Updated: 2021/07/26 11:24:13 by mlazzare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ void	draw_pixel(t_fractal *fr, int y, int x, int color)
 
 int	get_colors(int i)
 {
-	return (i % 256 << 16 | 255 << 8 | 255 * i);
+	return ((i % 256) << 16 | 255 << 8 | 255 * i);
 }

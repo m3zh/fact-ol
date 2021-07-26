@@ -12,7 +12,7 @@
 
 #include "../../inc/fractol.h"
 
-static void	swap_frame(t_fractal *fr)
+void	swap_frame(t_fractal *fr)
 {
 	void	*frame;
 	void	*adr;
